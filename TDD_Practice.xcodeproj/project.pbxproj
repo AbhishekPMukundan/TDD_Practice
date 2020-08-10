@@ -15,6 +15,9 @@
 		46E816B824E1566B007423E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E816B624E1566B007423E1 /* LaunchScreen.storyboard */; };
 		46E816C324E1566B007423E1 /* TDD_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E816C224E1566B007423E1 /* TDD_PracticeTests.swift */; };
 		46E816CE24E1566B007423E1 /* TDD_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E816CD24E1566B007423E1 /* TDD_PracticeUITests.swift */; };
+		46E816DC24E156D2007423E1 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E816DB24E156D2007423E1 /* SignupFormModelValidator.swift */; };
+		46E816DE24E1572F007423E1 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E816DD24E1572F007423E1 /* SignupFormModelValidatorTests.swift */; };
+		46E816E024E15E94007423E1 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E816DF24E15E94007423E1 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		46E816C924E1566B007423E1 /* TDD_PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_PracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E816CD24E1566B007423E1 /* TDD_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_PracticeUITests.swift; sourceTree = "<group>"; };
 		46E816CF24E1566B007423E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E816DB24E156D2007423E1 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		46E816DD24E1572F007423E1 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		46E816DF24E15E94007423E1 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		46E816AA24E1566A007423E1 /* TDD_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				46E816E124E16591007423E1 /* Signup */,
 				46E816AB24E1566A007423E1 /* AppDelegate.swift */,
 				46E816AD24E1566A007423E1 /* SceneDelegate.swift */,
 				46E816AF24E1566A007423E1 /* ViewController.swift */,
@@ -113,6 +120,7 @@
 		46E816C124E1566B007423E1 /* TDD_PracticeTests */ = {
 			isa = PBXGroup;
 			children = (
+				46E816E224E1659B007423E1 /* Signup */,
 				46E816C224E1566B007423E1 /* TDD_PracticeTests.swift */,
 				46E816C424E1566B007423E1 /* Info.plist */,
 			);
@@ -126,6 +134,23 @@
 				46E816CF24E1566B007423E1 /* Info.plist */,
 			);
 			path = TDD_PracticeUITests;
+			sourceTree = "<group>";
+		};
+		46E816E124E16591007423E1 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				46E816DB24E156D2007423E1 /* SignupFormModelValidator.swift */,
+				46E816DF24E15E94007423E1 /* SignupConstants.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		46E816E224E1659B007423E1 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				46E816DD24E1572F007423E1 /* SignupFormModelValidatorTests.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +286,8 @@
 			files = (
 				46E816B024E1566A007423E1 /* ViewController.swift in Sources */,
 				46E816AC24E1566A007423E1 /* AppDelegate.swift in Sources */,
+				46E816DC24E156D2007423E1 /* SignupFormModelValidator.swift in Sources */,
+				46E816E024E15E94007423E1 /* SignupConstants.swift in Sources */,
 				46E816AE24E1566A007423E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E816DE24E1572F007423E1 /* SignupFormModelValidatorTests.swift in Sources */,
 				46E816C324E1566B007423E1 /* TDD_PracticeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
