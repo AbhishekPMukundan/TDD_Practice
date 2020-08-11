@@ -12,8 +12,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-#     - name: Build
-#       run: swift build -v
+#     - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
     - name: Run tests
-      run: swift test -v
+      run: xcodebuild test -scheme TDD_Practice -project TDD_Practice/TDD_Practice.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4' | xcpretty && exit ${PIPESTATUS[0]}
